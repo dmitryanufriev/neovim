@@ -1,8 +1,8 @@
 # Neovim configuration
 
-## Configuration path
+## Path
 
-*$HOME/.config/nvim*
+**$HOME/.config/nvim**
 
 ## Prerequisites
 
