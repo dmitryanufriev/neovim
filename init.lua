@@ -65,7 +65,7 @@ require('packer').startup(function()
   -- Emmet
   use 'mattn/emmet-vim'
 
-  -- Terminal
+  -- Terminal (https://github.com/akinsho/toggleterm.nvim)
   use 'akinsho/toggleterm.nvim'
 
   -- Comment (https://github.com/numToStr/Comment.nvim)
