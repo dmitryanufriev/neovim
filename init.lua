@@ -66,7 +66,7 @@ require('packer').startup(function()
   use 'mattn/emmet-vim'
 
   -- Terminal
-  use "akinsho/toggleterm.nvim"
+  use 'akinsho/toggleterm.nvim'
 
   -- Comment (https://github.com/numToStr/Comment.nvim)
   use {
