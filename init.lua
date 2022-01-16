@@ -68,7 +68,7 @@ require('packer').startup(function()
   -- Terminal
   use "akinsho/toggleterm.nvim"
 
-  -- Comment
+  -- Comment (https://github.com/numToStr/Comment.nvim)
   use {
     'numToStr/Comment.nvim',
     config = function()
