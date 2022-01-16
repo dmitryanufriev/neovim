@@ -64,6 +64,9 @@ require('packer').startup(function()
 
   -- Emmet
   use 'mattn/emmet-vim'
+
+  -- Terminal
+  use "akinsho/toggleterm.nvim"
 end)
 
 
