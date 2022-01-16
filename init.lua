@@ -75,6 +75,9 @@ require('packer').startup(function()
       require('Comment').setup()
     end
   }
+
+  -- Show CSS colors (https://github.com/ap/vim-css-color)
+  use 'ap/vim-css-color'
 end)
 
 
