@@ -54,6 +54,9 @@ require('packer').startup(function()
   --- Автодополнлялка к файловой системе
   use 'hrsh7th/cmp-path'
 
+  -- Show LSP signature info (https://github.com/ray-x/lsp_signature.nvim)
+  use 'ray-x/lsp_signature.nvim'
+
   use 'tpope/vim-endwise'
 
   -- Bookmarks
@@ -156,6 +159,10 @@ cmp.setup {
     },
   },
 }
+
+-- lsp_signature setup
+local lsp_signature_cfg = {}
+require "lsp_signature".setup(lsp_signature_cfg)
 
 -- Bookmarks
 require('telescope').load_extension('vim_bookmarks')
