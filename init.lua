@@ -185,6 +185,21 @@ require "lsp_signature".setup(lsp_signature_cfg)
 -- Bookmarks
 require('telescope').load_extension('vim_bookmarks')
 
+-- Lazygit in floating window
+local Terminal = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({
+  cmd = "lazygit",
+  dir = "git_dir",
+  direction = "float",
+  float_opts = {
+    border = "double",
+  },
+})
+
+function _lazygit_toggle()
+  lazygit:toggle()
+end
+
 --*******************************************************
 --* KEY BINDINGS 
 --*******************************************************
@@ -223,3 +238,6 @@ vim.api.nvim_set_keymap('n', '+', ':res -5<cr>', default_opts)
 vim.api.nvim_set_keymap('n', '<M-b>', ':BookmarkAnnotate<cr>', default_opts)
 vim.api.nvim_set_keymap('n', '<M-B>', ':BookmarkToggle<cr>', default_opts)
 vim.api.nvim_set_keymap('n', '<Leader>bf', [[<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>]], default_opts)
+
+-- GIT
+vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<cr>", default_opts)
