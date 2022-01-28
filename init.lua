@@ -6,7 +6,10 @@ vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
+
+  -- Color themes
   use 'morhetz/gruvbox'
+  use 'arcticicestudio/nord-vim'
 
   -- Информационная строка внизу
   use { 'nvim-lualine/lualine.nvim',
@@ -104,7 +107,7 @@ end)
 --*******************************************************
 
 vim.cmd([[
-  colorscheme gruvbox
+  colorscheme nord
 ]])
 
 vim.cmd([[
